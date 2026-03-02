@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #fff8f0;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #b85c00;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Hamburger</h1>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="80%" style="max-width:700px;display:block;" role="img" aria-label="A delicious hamburger">
+    <title>A delicious hamburger</title>
+    <!-- Top bun -->
+    <ellipse cx="100" cy="45" rx="85" ry="38" fill="#e8a045"/>
+    <ellipse cx="100" cy="35" rx="85" ry="30" fill="#f2b84b"/>
+    <!-- Sesame seeds -->
+    <ellipse cx="70" cy="22" rx="7" ry="4" fill="#c8860a" transform="rotate(-20,70,22)"/>
+    <ellipse cx="100" cy="16" rx="7" ry="4" fill="#c8860a" transform="rotate(5,100,16)"/>
+    <ellipse cx="130" cy="20" rx="7" ry="4" fill="#c8860a" transform="rotate(15,130,20)"/>
+    <ellipse cx="85" cy="12" rx="5" ry="3" fill="#c8860a" transform="rotate(-10,85,12)"/>
+    <ellipse cx="115" cy="11" rx="5" ry="3" fill="#c8860a" transform="rotate(10,115,11)"/>
+    <!-- Lettuce -->
+    <path d="M15,68 Q40,55 65,68 Q90,80 115,65 Q140,52 165,66 Q182,74 185,80 L15,80 Z" fill="#5cb85c"/>
+    <!-- Cheese -->
+    <rect x="18" y="80" width="164" height="14" rx="3" fill="#f5c842"/>
+    <!-- Patty -->
+    <rect x="18" y="94" width="164" height="28" rx="10" fill="#7a3b10"/>
+    <!-- Tomato -->
+    <rect x="18" y="122" width="164" height="12" rx="3" fill="#e84040"/>
+    <!-- Bottom bun -->
+    <ellipse cx="100" cy="140" rx="85" ry="20" fill="#e8a045"/>
+    <ellipse cx="100" cy="144" rx="85" ry="16" fill="#f2b84b"/>
+  </svg>
+</body>
+</html>
