@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Library - CoolBurgerFiles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span>Email Library</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="email-list-panel" id="dropZone">
+            <div class="list-header">
+                <input type="text" id="searchInput" placeholder="Search emails...">
+            </div>
+            <div class="email-list" id="emailList">
+                <div class="empty-state">
+                    <div class="empty-icon">📭</div>
+                    <p>No emails yet</p>
+                    <p class="hint">No emails found in data/threads/</p>
+                </div>
+            </div>
+        </aside>
+
+        <section class="email-viewer" id="emailViewer">
+            <div class="viewer-placeholder">
+                <div class="placeholder-icon">📖</div>
+                <p>Select an email to read</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

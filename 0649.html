@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email #0649</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; }
+        .container { background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #0001; }
+        h1 { font-size: 2em; margin-bottom: 0.5em; }
+        pre { background: #f4f4f4; padding: 1em; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email #0649</h1>
+        <pre id="emailContent">Loading...</pre>
+    </div>
+    <script>
+    fetch('data/threads/thread_0649.eml')
+        .then(res => res.ok ? res.text() : 'Error loading email.')
+        .then(text => {
+            document.getElementById('emailContent').textContent = text;
+        })
+        .catch(() => {
+            document.getElementById('emailContent').textContent = 'Error loading email.';
+        });
+    </script>
+</body>
+</html>
